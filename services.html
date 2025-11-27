@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Imizizi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <img src="images/Logo.png" alt="Imizizi Logo" class="logo-img">
+                </div>
+                
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                  <li><a href="home.html" class="nav-link active">Home</a></li>
+                    <li class="dropdown">
+                        <li><a href="services.html" class="nav-link">Services</a></li>
+                        <ul class="dropdown-menu">
+                            <li><a href="#sourcing">Sourcing & Staffing</a></li>
+                            <li><a href="#advisory">Advisory & Consulting</a></li>
+                            <li><a href="#outsourced">Outsourced People Management</a></li>
+                            <li><a href="#managed">Managed Services</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="insights.html" class="nav-link">Insights</a></li>
+                    <li class="dropdown">
+                        <li><a href="careers.html" class="nav-link">Careers</a></li>
+                        <ul class="dropdown-menu">
+                            <li><a href="#talent-pool">Join Our Talent Pool</a></li>
+                            <li><a href="#open-roles">Current Open Roles</a></li>
+                            <li><a href="#career-advice">Career Advice</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!-- Services Overview -->
+    <section id="services" class="services-overview">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What We Do</span>
+                <h2>Comprehensive People Solutions</h2>
+                <p>From talent sourcing to strategic consulting, we offer end-to-end people management services tailored to your business needs.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3>Sourcing & Staffing</h3>
+                    <p>Finding the right talent for temporary and permanent positions across all industries.</p>
+                    <ul class="service-list">
+                        <li>Temporary staffing solutions</li>
+                        <li>Permanent placements</li>
+                        <li>Contingent workforce management</li>
+                    </ul>
+                    <a href="#sourcing" class="service-link" data-modal="sourcingModal">Learn More →</a>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                            <path d="M2 17l10 5 10-5"></path>
+                            <path d="M2 12l10 5 10-5"></path>
+                        </svg>
+                    </div>
+                    <h3>Advisory & Consulting</h3>
+                    <p>Strategic guidance to develop leaders and optimize your people strategy.</p>
+                    <ul class="service-list">
+                        <li>Leadership development programs</li>
+                        <li>People strategy consulting</li>
+                        <li>Organizational design</li>
+                    </ul>
+                    <a href="#advisory" class="service-link" data-modal="advisoryModal">Learn More →</a>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                        </svg>
+                    </div>
+                    <h3>Outsourced People Management</h3>
+                    <p>Complete HR operations management so you can focus on your core business.</p>
+                    <ul class="service-list">
+                        <li>HR operations & administration</li>
+                        <li>Payroll management</li>
+                        <li>Compliance & reporting</li>
+                    </ul>
+                    <a href="#outsourced" class="service-link" data-modal="outsourcedModal">Learn More →</a>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Managed Services (MSP)</h3>
+                    <p>End-to-end workforce and vendor management for complex staffing needs.</p>
+                    <ul class="service-list">
+                        <li>Workforce planning & management</li>
+                        <li>Vendor management programs</li>
+                        <li>Cost optimization</li>
+                    </ul>
+                    <a href="#managed" class="service-link" data-modal="managedModal">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Modals -->
+    <div id="sourcingModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Sourcing & Staffing Services</h1>
+            <p>At Imizizi, we specialize in providing tailored talent solutions for your business, whether temporary or permanent.</p>
+
+            <h2>Our Offerings</h2>
+            <ul>
+                <li><strong>Temporary staffing solutions:</strong> Quickly scale your workforce with qualified professionals for short-term projects.</li>
+                <li><strong>Permanent placements:</strong> Connect with top talent for long-term roles and secure your business growth.</li>
+                <li><strong>Contingent workforce management:</strong> Efficiently manage freelancers, contractors, and project-based employees.</li>
+                <li><strong>Recruitment process outsourcing (RPO):</strong> Full-service recruitment support to streamline your hiring.</li>
+                <li><strong>Industry-specialized recruitment:</strong> Expert sourcing for IT, finance, healthcare, and more.</li>
+            </ul>
+
+            <h2>Why Choose Imizizi?</h2>
+            <p>We combine industry knowledge, robust networks, and a people-first approach to ensure that the right candidates are placed in the right roles. Our focus is on building strong foundations for lasting business success.</p>
+
+            <a href="#contact" class="btn-primary modal-cta">Contact Us for Staffing Solutions</a>
+        </div>
+    </div>
+
+    <div id="advisoryModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Advisory & Consulting Services</h1>
+            <p>Transform your organization with strategic HR consulting and leadership development programs designed to drive sustainable growth.</p>
+
+            <h2>Our Services Include</h2>
+            <ul>
+                <li><strong>Leadership Development Programs:</strong> Cultivate strong leaders through customized training and coaching initiatives.</li>
+                <li><strong>People Strategy Consulting:</strong> Align your workforce strategy with business objectives for maximum impact.</li>
+                <li><strong>Organizational Design:</strong> Optimize your organizational structure for efficiency and agility.</li>
+                <li><strong>Change Management:</strong> Navigate organizational transitions smoothly with expert guidance.</li>
+                <li><strong>Performance Management Systems:</strong> Implement frameworks that drive accountability and results.</li>
+            </ul>
+
+            <h2>Our Approach</h2>
+            <p>We partner with you to understand your unique challenges and opportunities, then develop tailored solutions that create lasting organizational impact. Our consultants bring decades of experience across diverse industries.</p>
+
+            <a href="#contact" class="btn-primary modal-cta">Schedule a Consultation</a>
+        </div>
+    </div>
+
+    <div id="outsourcedModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Outsourced People Management</h1>
+            <p>Focus on your core business while we handle all aspects of HR operations with professionalism and compliance excellence.</p>
+
+            <h2>Comprehensive HR Solutions</h2>
+            <ul>
+                <li><strong>HR Operations & Administration:</strong> Complete management of day-to-day HR functions and employee lifecycle.</li>
+                <li><strong>Payroll Management:</strong> Accurate, timely payroll processing with full compliance assurance.</li>
+                <li><strong>Compliance & Reporting:</strong> Stay compliant with labor laws and regulations across all jurisdictions.</li>
+                <li><strong>Benefits Administration:</strong> Manage employee benefits programs efficiently and effectively.</li>
+                <li><strong>Employee Relations:</strong> Handle workplace issues, grievances, and conflict resolution professionally.</li>
+            </ul>
+
+            <h2>Benefits of Outsourcing</h2>
+            <p>Reduce overhead costs, access expert HR knowledge, ensure compliance, and free up internal resources to focus on strategic initiatives. Our team becomes an extension of your organization.</p>
+
+            <a href="#contact" class="btn-primary modal-cta">Get Started Today</a>
+        </div>
+    </div>
+
+    <div id="managedModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Managed Services Program (MSP)</h1>
+            <p>Streamline your contingent workforce management with our comprehensive MSP solutions that optimize costs and improve quality.</p>
+
+            <h2>MSP Capabilities</h2>
+            <ul>
+                <li><strong>Workforce Planning & Management:</strong> Strategic oversight of your entire contingent workforce ecosystem.</li>
+                <li><strong>Vendor Management Programs:</strong> Consolidate and optimize your staffing supplier relationships.</li>
+                <li><strong>Cost Optimization:</strong> Reduce spend while improving quality through data-driven insights.</li>
+                <li><strong>Compliance Management:</strong> Ensure all contractors and vendors meet regulatory requirements.</li>
+                <li><strong>Technology Integration:</strong> Leverage cutting-edge VMS platforms for transparency and efficiency.</li>
+            </ul>
+
+            <h2>Why MSP?</h2>
+            <p>Gain complete visibility into your contingent workforce, reduce administrative burden, achieve significant cost savings, and access top talent faster. Our MSP solutions scale with your business needs.</p>
+
+            <a href="#contact" class="btn-primary modal-cta">Learn More About MSP</a>
+        </div>
+    </div>
+
+<!-- Client Logos -->
+    <section class="client-logos">
+        <div class="container">
+            <h3>Proud Partners of Industry Leaders</h3>
+            <div class="logo-grid">
+                <div class="logo-item">Client 1</div>
+                <div class="logo-item">Client 2</div>
+                <div class="logo-item">Client 3</div>
+                <div class="logo-item">Client 4</div>
+                <div class="logo-item">Client 5</div>
+                <div class="logo-item">Client 6</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="images/Logo.png" alt="Imizizi Logo" class="logo-img">
+                    </div>
+                    <p>Building strong foundations for business success through people.</p>
+                    <div class="footer-social">
+                        <a href="#">LinkedIn</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">Facebook</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#sourcing">Sourcing & Staffing</a></li>
+                        <li><a href="#advisory">Advisory & Consulting</a></li>
+                        <li><a href="#outsourced">Outsourced HR</a></li>
+                        <li><a href="#managed">Managed Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#team">Our Team</a></li>
+                        <li><a href="#insights">Insights</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Careers</h4>
+                    <ul>
+                        <li><a href="#talent-pool">Join Talent Pool</a></li>
+                        <li><a href="#open-roles">Open Roles</a></li>
+                        <li><a href="#career-advice">Career Advice</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Imizizi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

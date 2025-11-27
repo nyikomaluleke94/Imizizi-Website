@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers - Imizizi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <img src="images/Logo.png" alt="Imizizi Logo" class="logo-img">
+                </div>
+                
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="home.html" class="nav-link active">Home</a></li>
+                    <li class="dropdown">
+                        <li><a href="services.html" class="nav-link">Services</a></li>
+                        <ul class="dropdown-menu">
+                            <li><a href="#sourcing">Sourcing & Staffing</a></li>
+                            <li><a href="#advisory">Advisory & Consulting</a></li>
+                            <li><a href="#outsourced">Outsourced People Management</a></li>
+                            <li><a href="#managed">Managed Services</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="insights.html" class="nav-link">Insights</a></li>
+                    <li class="dropdown">
+                        <li><a href="careers.html" class="nav-link">Careers</a></li>
+                        <ul class="dropdown-menu">
+                            <li><a href="#talent-pool">Join Our Talent Pool</a></li>
+                            <li><a href="#open-roles">Current Open Roles</a></li>
+                            <li><a href="#career-advice">Career Advice</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!-- Careers Section -->
+    <section id="careers" class="careers-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Career Opportunities</span>
+                <h2>Join Our Talent Network</h2>
+                <p>Whether you're seeking your next role or looking to join our team, we're here to help you grow.</p>
+            </div>
+            <div class="careers-grid">
+                <div class="career-card" data-aos="fade-up">
+                    <h3>For Job Seekers</h3>
+                    <p>Access exclusive opportunities across industries and connect with leading employers.</p>
+                    <a href="#talent-pool" class="btn-primary" data-modal="talentPoolModal">Join Talent Pool</a>
+                </div>
+                <div class="career-card" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Current Openings</h3>
+                    <p>Explore exciting roles that match your skills and career aspirations.</p>
+                    <a href="#open-roles" class="btn-primary" data-modal="openRolesModal">View Open Roles</a>
+                </div>
+                <div class="career-card" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Career Resources</h3>
+                    <p>Get expert advice on resumes, interviews, and career development.</p>
+                    <a href="#career-advice" class="btn-primary" data-modal="careerAdviceModal">Get Career Advice</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Modals -->
+    <div id="talentPoolModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Join Our Talent Pool</h1>
+            <p>Register with Imizizi to access exclusive job opportunities and career support services.</p>
+
+            <h2>Benefits of Joining</h2>
+            <ul>
+                <li>First access to new job openings before public posting</li>
+                <li>Personalized job matching based on your skills and preferences</li>
+                <li>Career coaching and resume optimization services</li>
+                <li>Interview preparation and feedback</li>
+                <li>Salary negotiation support</li>
+                <li>Ongoing career development resources</li>
+            </ul>
+
+            <h2>How It Works</h2>
+            <p>Submit your profile and resume through our secure portal. Our team will review your information and reach out when opportunities matching your profile become available. We maintain strict confidentiality throughout the process.</p>
+
+            <form class="talent-form">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <input type="tel" placeholder="Phone Number" required>
+                <select required>
+                    <option value="">Select Industry</option>
+                    <option value="it">Information Technology</option>
+                    <option value="finance">Finance & Banking</option>
+                    <option value="healthcare">Healthcare</option>
+                    <option value="manufacturing">Manufacturing</option>
+                    <option value="retail">Retail</option>
+                    <option value="other">Other</option>
+                </select>
+                <textarea placeholder="Brief career summary" rows="4"></textarea>
+                <button type="submit" class="btn-primary">Submit Application</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="openRolesModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Current Open Roles</h1>
+            <p>Explore our latest opportunities across various industries and experience levels.</p>
+
+            <div class="jobs-list">
+                <div class="job-item">
+                    <h3>Senior Software Engineer</h3>
+                    <p class="job-meta">Technology • Johannesburg • Full-time</p>
+                    <p>Leading tech company seeking experienced software engineer to join their innovation team. 5+ years experience required.</p>
+                    <a href="#contact" class="btn-secondary">Apply Now</a>
+                </div>
+                <div class="job-item">
+                    <h3>Financial Analyst</h3>
+                    <p class="job-meta">Finance • Cape Town • Permanent</p>
+                    <p>Multinational corporation looking for detail-oriented financial analyst with strong analytical skills and 3+ years experience.</p>
+                    <a href="#contact" class="btn-secondary">Apply Now</a>
+                </div>
+                <div class="job-item">
+                    <h3>HR Manager</h3>
+                    <p class="job-meta">Human Resources • Durban • Full-time</p>
+                    <p>Growing organization needs experienced HR Manager to lead people strategy and operations. 7+ years experience preferred.</p>
+                    <a href="#contact" class="btn-secondary">Apply Now</a>
+                </div>
+                <div class="job-item">
+                    <h3>Marketing Specialist</h3>
+                    <p class="job-meta">Marketing • Remote • Contract</p>
+                    <p>Digital marketing specialist needed for 6-month project. Experience with SEO, content marketing, and social media required.</p>
+                    <a href="#contact" class="btn-secondary">Apply Now</a>
+                </div>
+                <div class="job-item">
+                    <h3>Project Manager</h3>
+                    <p class="job-meta">Operations • Pretoria • Permanent</p>
+                    <p>PMP-certified project manager to oversee complex infrastructure projects. Strong stakeholder management skills essential.</p>
+                    <a href="#contact" class="btn-secondary">Apply Now</a>
+                </div>
+            </div>
+
+            <p class="jobs-footer">Don't see the right role? <a href="#talent-pool" data-modal="talentPoolModal">Join our talent pool</a> to be notified of future opportunities.</p>
+        </div>
+    </div>
+
+    <div id="careerAdviceModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Career Advice & Resources</h1>
+            <p>Expert guidance to help you navigate your career journey successfully.</p>
+
+            <div class="advice-sections">
+                <div class="advice-section">
+                    <h2>Resume & CV Tips</h2>
+                    <ul>
+                        <li>Tailor your resume to each specific role and company</li>
+                        <li>Use action verbs and quantify achievements with metrics</li>
+                        <li>Keep formatting clean, professional, and ATS-friendly</li>
+                        <li>Highlight relevant skills and certifications prominently</li>
+                        <li>Include a compelling professional summary</li>
+                    </ul>
+                </div>
+
+                <div class="advice-section">
+                    <h2>Interview Preparation</h2>
+                    <ul>
+                        <li>Research the company thoroughly before your interview</li>
+                        <li>Prepare specific examples using the STAR method</li>
+                        <li>Practice common interview questions out loud</li>
+                        <li>Prepare thoughtful questions to ask the interviewer</li>
+                        <li>Follow up with a thank-you email within 24 hours</li>
+                    </ul>
+                </div>
+
+                <div class="advice-section">
+                    <h2>Career Development</h2>
+                    <ul>
+                        <li>Set clear short-term and long-term career goals</li>
+                        <li>Continuously update your skills through learning</li>
+                        <li>Build and maintain a strong professional network</li>
+                        <li>Seek mentorship and be open to feedback</li>
+                        <li>Document your achievements and impact regularly</li>
+                    </ul>
+                </div>
+
+                <div class="advice-section">
+                    <h2>Salary Negotiation</h2>
+                    <ul>
+                        <li>Research market rates for your role and experience level</li>
+                        <li>Consider total compensation, not just base salary</li>
+                        <li>Practice your negotiation conversation beforehand</li>
+                        <li>Be prepared to justify your salary expectations</li>
+                        <li>Know when to walk away from an inadequate offer</li>
+                    </ul>
+                </div>
+            </div>
+
+            <a href="#contact" class="btn-primary modal-cta">Schedule Career Coaching Session</a>
+        </div>
+    </div>
+
+<!-- Client Logos -->
+    <section class="client-logos">
+        <div class="container">
+            <h3>Proud Partners of Industry Leaders</h3>
+            <div class="logo-grid">
+                <div class="logo-item">Client 1</div>
+                <div class="logo-item">Client 2</div>
+                <div class="logo-item">Client 3</div>
+                <div class="logo-item">Client 4</div>
+                <div class="logo-item">Client 5</div>
+                <div class="logo-item">Client 6</div>
+            </div>
+        </div>
+    </section>
+
+<!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="images/Logo.png" alt="Imizizi Logo" class="logo-img">
+                    </div>
+                    <p>Building strong foundations for business success through people.</p>
+                    <div class="footer-social">
+                        <a href="#">LinkedIn</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">Facebook</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#sourcing">Sourcing & Staffing</a></li>
+                        <li><a href="#advisory">Advisory & Consulting</a></li>
+                        <li><a href="#outsourced">Outsourced HR</a></li>
+                        <li><a href="#managed">Managed Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#team">Our Team</a></li>
+                        <li><a href="#insights">Insights</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Careers</h4>
+                    <ul>
+                        <li><a href="#talent-pool">Join Talent Pool</a></li>
+                        <li><a href="#open-roles">Open Roles</a></li>
+                        <li><a href="#career-advice">Career Advice</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Imizizi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
