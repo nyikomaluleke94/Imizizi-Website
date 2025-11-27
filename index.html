@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imizizi - People Management & Consulting Specialists</title>
-
     <link rel="stylesheet" href="styles.css">
+</head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
@@ -42,7 +42,6 @@
                         </ul>
                     </li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
-                    
                 </ul>
             </div>
         </div>
@@ -105,7 +104,7 @@
                         <li>Permanent placements</li>
                         <li>Contingent workforce management</li>
                     </ul>
-                    <a href="#sourcing" class="service-link">Learn More →</a>
+                    <a href="#sourcing" class="service-link" data-modal="sourcingModal">Learn More →</a>
                 </div>
 
                 <div class="service-card" data-aos="fade-up" data-aos-delay="100">
@@ -123,7 +122,7 @@
                         <li>People strategy consulting</li>
                         <li>Organizational design</li>
                     </ul>
-                    <a href="#advisory" class="service-link">Learn More →</a>
+                    <a href="#advisory" class="service-link" data-modal="advisoryModal">Learn More →</a>
                 </div>
 
                 <div class="service-card" data-aos="fade-up" data-aos-delay="200">
@@ -140,7 +139,7 @@
                         <li>Payroll management</li>
                         <li>Compliance & reporting</li>
                     </ul>
-                    <a href="#outsourced" class="service-link">Learn More →</a>
+                    <a href="#outsourced" class="service-link" data-modal="outsourcedModal">Learn More →</a>
                 </div>
 
                 <div class="service-card" data-aos="fade-up" data-aos-delay="300">
@@ -157,11 +156,100 @@
                         <li>Vendor management programs</li>
                         <li>Cost optimization</li>
                     </ul>
-                    <a href="#managed" class="service-link">Learn More →</a>
+                    <a href="#managed" class="service-link" data-modal="managedModal">Learn More →</a>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Service Modals -->
+    <div id="sourcingModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Sourcing & Staffing Services</h1>
+            <p>At Imizizi, we specialize in providing tailored talent solutions for your business, whether temporary or permanent.</p>
+
+            <h2>Our Offerings</h2>
+            <ul>
+                <li><strong>Temporary staffing solutions:</strong> Quickly scale your workforce with qualified professionals for short-term projects.</li>
+                <li><strong>Permanent placements:</strong> Connect with top talent for long-term roles and secure your business growth.</li>
+                <li><strong>Contingent workforce management:</strong> Efficiently manage freelancers, contractors, and project-based employees.</li>
+                <li><strong>Recruitment process outsourcing (RPO):</strong> Full-service recruitment support to streamline your hiring.</li>
+                <li><strong>Industry-specialized recruitment:</strong> Expert sourcing for IT, finance, healthcare, and more.</li>
+            </ul>
+
+            <h2>Why Choose Imizizi?</h2>
+            <p>We combine industry knowledge, robust networks, and a people-first approach to ensure that the right candidates are placed in the right roles. Our focus is on building strong foundations for lasting business success.</p>
+
+            <a href="#contact" class="btn-primary modal-cta">Contact Us for Staffing Solutions</a>
+        </div>
+    </div>
+
+    <div id="advisoryModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Advisory & Consulting Services</h1>
+            <p>Transform your organization with strategic HR consulting and leadership development programs designed to drive sustainable growth.</p>
+
+            <h2>Our Services Include</h2>
+            <ul>
+                <li><strong>Leadership Development Programs:</strong> Cultivate strong leaders through customized training and coaching initiatives.</li>
+                <li><strong>People Strategy Consulting:</strong> Align your workforce strategy with business objectives for maximum impact.</li>
+                <li><strong>Organizational Design:</strong> Optimize your organizational structure for efficiency and agility.</li>
+                <li><strong>Change Management:</strong> Navigate organizational transitions smoothly with expert guidance.</li>
+                <li><strong>Performance Management Systems:</strong> Implement frameworks that drive accountability and results.</li>
+            </ul>
+
+            <h2>Our Approach</h2>
+            <p>We partner with you to understand your unique challenges and opportunities, then develop tailored solutions that create lasting organizational impact. Our consultants bring decades of experience across diverse industries.</p>
+
+            <a href="#contact" class="btn-primary modal-cta">Schedule a Consultation</a>
+        </div>
+    </div>
+
+    <div id="outsourcedModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Outsourced People Management</h1>
+            <p>Focus on your core business while we handle all aspects of HR operations with professionalism and compliance excellence.</p>
+
+            <h2>Comprehensive HR Solutions</h2>
+            <ul>
+                <li><strong>HR Operations & Administration:</strong> Complete management of day-to-day HR functions and employee lifecycle.</li>
+                <li><strong>Payroll Management:</strong> Accurate, timely payroll processing with full compliance assurance.</li>
+                <li><strong>Compliance & Reporting:</strong> Stay compliant with labor laws and regulations across all jurisdictions.</li>
+                <li><strong>Benefits Administration:</strong> Manage employee benefits programs efficiently and effectively.</li>
+                <li><strong>Employee Relations:</strong> Handle workplace issues, grievances, and conflict resolution professionally.</li>
+            </ul>
+
+            <h2>Benefits of Outsourcing</h2>
+            <p>Reduce overhead costs, access expert HR knowledge, ensure compliance, and free up internal resources to focus on strategic initiatives. Our team becomes an extension of your organization.</p>
+
+            <a href="#contact" class="btn-primary modal-cta">Get Started Today</a>
+        </div>
+    </div>
+
+    <div id="managedModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Managed Services Program (MSP)</h1>
+            <p>Streamline your contingent workforce management with our comprehensive MSP solutions that optimize costs and improve quality.</p>
+
+            <h2>MSP Capabilities</h2>
+            <ul>
+                <li><strong>Workforce Planning & Management:</strong> Strategic oversight of your entire contingent workforce ecosystem.</li>
+                <li><strong>Vendor Management Programs:</strong> Consolidate and optimize your staffing supplier relationships.</li>
+                <li><strong>Cost Optimization:</strong> Reduce spend while improving quality through data-driven insights.</li>
+                <li><strong>Compliance Management:</strong> Ensure all contractors and vendors meet regulatory requirements.</li>
+                <li><strong>Technology Integration:</strong> Leverage cutting-edge VMS platforms for transparency and efficiency.</li>
+            </ul>
+
+            <h2>Why MSP?</h2>
+            <p>Gain complete visibility into your contingent workforce, reduce administrative burden, achieve significant cost savings, and access top talent faster. Our MSP solutions scale with your business needs.</p>
+
+            <a href="#contact" class="btn-primary modal-cta">Learn More About MSP</a>
+        </div>
+    </div>
 
     <!-- Why Choose Us -->
     <section class="why-choose-us">
@@ -298,11 +386,49 @@
                             <p>Open dialogue and active listening drive our approach.</p>
                         </div>
                     </div>
-                    <a href="#team" class="btn-secondary">Meet Our Team</a>
+                    <a href="#team" class="btn-secondary" data-modal="teamModal">Meet Our Team</a>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Team Modal -->
+    <div id="teamModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Meet Our Leadership Team</h1>
+            <p>Our team brings together diverse expertise in HR, talent management, and organizational development.</p>
+
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="team-photo" style="background-image: url('images/drea.jpg');"></div>
+                    <h3>Nomsa Dlamini</h3>
+                    <p class="team-role">Founder & CEO</p>
+                    <p>20+ years in strategic HR leadership across multinational corporations. Passionate about building people-centric organizations.</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-photo"></div>
+                    <h3>Michael Chen</h3>
+                    <p class="team-role">Head of Talent Acquisition</p>
+                    <p>Expert in recruitment strategy and employer branding with a track record of placing over 1,000 candidates.</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-photo"></div>
+                    <h3>Ayanda Nkosi</h3>
+                    <p class="team-role">Director of Consulting</p>
+                    <p>Organizational psychologist specializing in leadership development and change management.</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-photo"></div>
+                    <h3>Jennifer Smith</h3>
+                    <p class="team-role">Head of Operations</p>
+                    <p>Ensures seamless delivery of HR services with focus on compliance and operational excellence.</p>
+                </div>
+            </div>
+
+            <a href="#contact" class="btn-primary modal-cta">Work With Our Team</a>
+        </div>
+    </div>
 
     <!-- Insights Section -->
     <section id="insights" class="insights-section">
@@ -319,7 +445,7 @@
                         <span class="insight-category">HR Trends</span>
                         <h3>The Future of Work: Adapting to Hybrid Models</h3>
                         <p>Explore how organizations are successfully navigating the shift to hybrid work environments and maintaining productivity.</p>
-                        <a href="#" class="insight-link">Read More →</a>
+                        <a href="#" class="insight-link" data-modal="insight1Modal">Read More →</a>
                     </div>
                 </article>
                 <article class="insight-card" data-aos="fade-up" data-aos-delay="100">
@@ -328,7 +454,7 @@
                         <span class="insight-category">Leadership</span>
                         <h3>Building Resilient Leadership in Uncertain Times</h3>
                         <p>Learn key strategies for developing leaders who can guide teams through change and complexity.</p>
-                        <a href="#" class="insight-link">Read More →</a>
+                        <a href="#" class="insight-link" data-modal="insight2Modal">Read More →</a>
                     </div>
                 </article>
                 <article class="insight-card" data-aos="fade-up" data-aos-delay="200">
@@ -337,15 +463,134 @@
                         <span class="insight-category">DEI</span>
                         <h3>Creating Inclusive Workplaces: A Practical Guide</h3>
                         <p>Practical steps for building diverse, equitable, and inclusive organizational cultures.</p>
-                        <a href="#" class="insight-link">Read More →</a>
+                        <a href="#" class="insight-link" data-modal="insight3Modal">Read More →</a>
                     </div>
                 </article>
             </div>
             <div class="insights-cta">
-                <a href="#insights-full" class="btn-secondary">View All Insights</a>
+                <a href="#insights-full" class="btn-secondary" data-modal="allInsightsModal">View All Insights</a>
             </div>
         </div>
     </section>
+
+    <!-- Insight Modals -->
+    <div id="insight1Modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>The Future of Work: Adapting to Hybrid Models</h1>
+            <span class="insight-category">HR Trends</span>
+            
+            <p>The workplace landscape has undergone a dramatic transformation. Organizations worldwide are reimagining how, where, and when work gets done. The hybrid work model has emerged as the dominant approach, blending remote flexibility with in-office collaboration.</p>
+
+            <h2>Key Challenges</h2>
+            <ul>
+                <li>Maintaining team cohesion across distributed workforces</li>
+                <li>Ensuring equitable experiences for remote and in-office employees</li>
+                <li>Managing productivity and performance in flexible environments</li>
+                <li>Preserving organizational culture and employee engagement</li>
+            </ul>
+
+            <h2>Best Practices</h2>
+            <p>Successful organizations are implementing intentional strategies: establishing clear communication protocols, investing in collaboration technology, creating purposeful office experiences, and measuring outcomes rather than hours worked.</p>
+
+            <h2>The Path Forward</h2>
+            <p>The future belongs to organizations that embrace flexibility while maintaining strong connections. Leaders must prioritize trust, transparency, and continuous adaptation to thrive in this new era of work.</p>
+
+            <a href="#contact" class="btn-primary modal-cta">Discuss Your Hybrid Strategy</a>
+        </div>
+    </div>
+
+    <div id="insight2Modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Building Resilient Leadership in Uncertain Times</h1>
+            <span class="insight-category">Leadership</span>
+            
+            <p>Today's leaders face unprecedented complexity and constant change. Building resilient leadership capabilities is no longer optional—it's essential for organizational survival and success.</p>
+
+            <h2>Core Resilience Competencies</h2>
+            <ul>
+                <li><strong>Adaptive Thinking:</strong> Ability to pivot strategies quickly in response to changing conditions</li>
+                <li><strong>Emotional Intelligence:</strong> Understanding and managing emotions in self and others</li>
+                <li><strong>Strategic Agility:</strong> Balancing long-term vision with short-term responsiveness</li>
+                <li><strong>Inclusive Decision-Making:</strong> Leveraging diverse perspectives for better outcomes</li>
+            </ul>
+
+            <h2>Development Strategies</h2>
+            <p>Organizations can build resilient leaders through targeted development programs, executive coaching, peer learning networks, and real-world stretch assignments that challenge comfort zones.</p>
+
+            <h2>Measuring Impact</h2>
+            <p>Track leadership effectiveness through employee engagement scores, team performance metrics, retention rates, and the ability to successfully navigate organizational challenges.</p>
+
+            <a href="#contact" class="btn-primary modal-cta">Explore Leadership Programs</a>
+        </div>
+    </div>
+
+    <div id="insight3Modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Creating Inclusive Workplaces: A Practical Guide</h1>
+            <span class="insight-category">DEI</span>
+            
+            <p>Diversity, equity, and inclusion (DEI) are not just buzzwords—they're business imperatives. Organizations with strong DEI practices outperform competitors in innovation, employee satisfaction, and financial results.</p>
+
+            <h2>Foundation Elements</h2>
+            <ul>
+                <li><strong>Leadership Commitment:</strong> Visible, authentic support from top executives</li>
+                <li><strong>Inclusive Policies:</strong> Fair, transparent practices in hiring, promotion, and compensation</li>
+                <li><strong>Psychological Safety:</strong> Environments where all voices are heard and valued</li>
+                <li><strong>Continuous Education:</strong> Ongoing learning about bias, privilege, and inclusion</li>
+            </ul>
+
+            <h2>Action Steps</h2>
+            <p>Start with honest assessment of current state, set measurable goals, implement bias-aware recruitment processes, create employee resource groups, and establish accountability mechanisms.</p>
+
+            <h2>Sustaining Progress</h2>
+            <p>DEI is a journey, not a destination. Regular measurement, transparent reporting, and continuous improvement ensure lasting cultural transformation.</p>
+
+            <a href="#contact" class="btn-primary modal-cta">Start Your DEI Journey</a>
+        </div>
+    </div>
+
+    <div id="allInsightsModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>All Insights & Resources</h1>
+            <p>Browse our complete library of articles, guides, and resources on people management, leadership, and organizational development.</p>
+
+            <div class="insights-list">
+                <div class="insight-item">
+                    <h3>Talent Acquisition</h3>
+                    <ul>
+                        <li>Building a Strong Employer Brand</li>
+                        <li>Innovative Recruitment Strategies for 2024</li>
+                        <li>The Role of AI in Modern Hiring</li>
+                        <li>Reducing Time-to-Hire Without Compromising Quality</li>
+                    </ul>
+                </div>
+                <div class="insight-item">
+                    <h3>Employee Engagement</h3>
+                    <ul>
+                        <li>Creating a Culture of Recognition</li>
+                        <li>Measuring and Improving Employee Experience</li>
+                        <li>The Connection Between Engagement and Performance</li>
+                        <li>Retention Strategies That Actually Work</li>
+                    </ul>
+                </div>
+                <div class="insight-item">
+                    <h3>Learning & Development</h3>
+                    <ul>
+                        <li>Building Future-Ready Skills</li>
+                        <li>Effective Onboarding Programs</li>
+                        <li>Succession Planning Best Practices</li>
+                        <li>Creating a Learning Organization</li>
+                    </ul>
+                </div>
+            </div>
+
+            <a href="#contact" class="btn-primary modal-cta">Subscribe to Our Newsletter</a>
+        </div>
+    </div>
 
     <!-- CTA Banner -->
     <section class="cta-banner">
@@ -360,6 +605,172 @@
             </div>
         </div>
     </section>
+
+    <!-- Careers Section -->
+    <section id="careers" class="careers-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Career Opportunities</span>
+                <h2>Join Our Talent Network</h2>
+                <p>Whether you're seeking your next role or looking to join our team, we're here to help you grow.</p>
+            </div>
+            <div class="careers-grid">
+                <div class="career-card" data-aos="fade-up">
+                    <h3>For Job Seekers</h3>
+                    <p>Access exclusive opportunities across industries and connect with leading employers.</p>
+                    <a href="#talent-pool" class="btn-primary" data-modal="talentPoolModal">Join Talent Pool</a>
+                </div>
+                <div class="career-card" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Current Openings</h3>
+                    <p>Explore exciting roles that match your skills and career aspirations.</p>
+                    <a href="#open-roles" class="btn-primary" data-modal="openRolesModal">View Open Roles</a>
+                </div>
+                <div class="career-card" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Career Resources</h3>
+                    <p>Get expert advice on resumes, interviews, and career development.</p>
+                    <a href="#career-advice" class="btn-primary" data-modal="careerAdviceModal">Get Career Advice</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Modals -->
+    <div id="talentPoolModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Join Our Talent Pool</h1>
+            <p>Register with Imizizi to access exclusive job opportunities and career support services.</p>
+
+            <h2>Benefits of Joining</h2>
+            <ul>
+                <li>First access to new job openings before public posting</li>
+                <li>Personalized job matching based on your skills and preferences</li>
+                <li>Career coaching and resume optimization services</li>
+                <li>Interview preparation and feedback</li>
+                <li>Salary negotiation support</li>
+                <li>Ongoing career development resources</li>
+            </ul>
+
+            <h2>How It Works</h2>
+            <p>Submit your profile and resume through our secure portal. Our team will review your information and reach out when opportunities matching your profile become available. We maintain strict confidentiality throughout the process.</p>
+
+            <form class="talent-form">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <input type="tel" placeholder="Phone Number" required>
+                <select required>
+                    <option value="">Select Industry</option>
+                    <option value="it">Information Technology</option>
+                    <option value="finance">Finance & Banking</option>
+                    <option value="healthcare">Healthcare</option>
+                    <option value="manufacturing">Manufacturing</option>
+                    <option value="retail">Retail</option>
+                    <option value="other">Other</option>
+                </select>
+                <textarea placeholder="Brief career summary" rows="4"></textarea>
+                <button type="submit" class="btn-primary">Submit Application</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="openRolesModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Current Open Roles</h1>
+            <p>Explore our latest opportunities across various industries and experience levels.</p>
+
+            <div class="jobs-list">
+                <div class="job-item">
+                    <h3>Senior Software Engineer</h3>
+                    <p class="job-meta">Technology • Johannesburg • Full-time</p>
+                    <p>Leading tech company seeking experienced software engineer to join their innovation team. 5+ years experience required.</p>
+                    <a href="#contact" class="btn-secondary">Apply Now</a>
+                </div>
+                <div class="job-item">
+                    <h3>Financial Analyst</h3>
+                    <p class="job-meta">Finance • Cape Town • Permanent</p>
+                    <p>Multinational corporation looking for detail-oriented financial analyst with strong analytical skills and 3+ years experience.</p>
+                    <a href="#contact" class="btn-secondary">Apply Now</a>
+                </div>
+                <div class="job-item">
+                    <h3>HR Manager</h3>
+                    <p class="job-meta">Human Resources • Durban • Full-time</p>
+                    <p>Growing organization needs experienced HR Manager to lead people strategy and operations. 7+ years experience preferred.</p>
+                    <a href="#contact" class="btn-secondary">Apply Now</a>
+                </div>
+                <div class="job-item">
+                    <h3>Marketing Specialist</h3>
+                    <p class="job-meta">Marketing • Remote • Contract</p>
+                    <p>Digital marketing specialist needed for 6-month project. Experience with SEO, content marketing, and social media required.</p>
+                    <a href="#contact" class="btn-secondary">Apply Now</a>
+                </div>
+                <div class="job-item">
+                    <h3>Project Manager</h3>
+                    <p class="job-meta">Operations • Pretoria • Permanent</p>
+                    <p>PMP-certified project manager to oversee complex infrastructure projects. Strong stakeholder management skills essential.</p>
+                    <a href="#contact" class="btn-secondary">Apply Now</a>
+                </div>
+            </div>
+
+            <p class="jobs-footer">Don't see the right role? <a href="#talent-pool" data-modal="talentPoolModal">Join our talent pool</a> to be notified of future opportunities.</p>
+        </div>
+    </div>
+
+    <div id="careerAdviceModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Career Advice & Resources</h1>
+            <p>Expert guidance to help you navigate your career journey successfully.</p>
+
+            <div class="advice-sections">
+                <div class="advice-section">
+                    <h2>Resume & CV Tips</h2>
+                    <ul>
+                        <li>Tailor your resume to each specific role and company</li>
+                        <li>Use action verbs and quantify achievements with metrics</li>
+                        <li>Keep formatting clean, professional, and ATS-friendly</li>
+                        <li>Highlight relevant skills and certifications prominently</li>
+                        <li>Include a compelling professional summary</li>
+                    </ul>
+                </div>
+
+                <div class="advice-section">
+                    <h2>Interview Preparation</h2>
+                    <ul>
+                        <li>Research the company thoroughly before your interview</li>
+                        <li>Prepare specific examples using the STAR method</li>
+                        <li>Practice common interview questions out loud</li>
+                        <li>Prepare thoughtful questions to ask the interviewer</li>
+                        <li>Follow up with a thank-you email within 24 hours</li>
+                    </ul>
+                </div>
+
+                <div class="advice-section">
+                    <h2>Career Development</h2>
+                    <ul>
+                        <li>Set clear short-term and long-term career goals</li>
+                        <li>Continuously update your skills through learning</li>
+                        <li>Build and maintain a strong professional network</li>
+                        <li>Seek mentorship and be open to feedback</li>
+                        <li>Document your achievements and impact regularly</li>
+                    </ul>
+                </div>
+
+                <div class="advice-section">
+                    <h2>Salary Negotiation</h2>
+                    <ul>
+                        <li>Research market rates for your role and experience level</li>
+                        <li>Consider total compensation, not just base salary</li>
+                        <li>Practice your negotiation conversation beforehand</li>
+                        <li>Be prepared to justify your salary expectations</li>
+                        <li>Know when to walk away from an inadequate offer</li>
+                    </ul>
+                </div>
+            </div>
+
+            <a href="#contact" class="btn-primary modal-cta">Schedule Career Coaching Session</a>
+        </div>
+    </div>
 
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
@@ -381,58 +792,60 @@
                             </div>
                         </div>
                         <div class="contact-item">
-                            <div class="contact-icon">📱</div>
+                            <div class="contact-icon">📞</div>
                             <div>
                                 <h4>Phone</h4>
-                                <p>011 568 3063</p>
+                                <p>+27 11 123 4567</p>
                             </div>
                         </div>
                         <div class="contact-item">
                             <div class="contact-icon">📍</div>
                             <div>
-                                <h4>Location</h4>
-                                <p>90 Grayston Dr, Sandown, Sandton, 2031</p>
+                                <h4>Office</h4>
+                                <p>Sandton, Johannesburg<br>South Africa</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">🕐</div>
+                            <div>
+                                <h4>Business Hours</h4>
+                                <p>Mon - Fri: 8:00 AM - 5:00 PM<br>Sat - Sun: Closed</p>
                             </div>
                         </div>
                     </div>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">LinkedIn</a>
+                        <a href="#" class="social-icon">Twitter</a>
+                        <a href="#" class="social-icon">Facebook</a>
+                    </div>
                 </div>
-                <form class="contact-form" data-aos="fade-left">
-                    <div class="form-group">
-                        <label for="enquiry-type">I'm interested in:</label>
-                        <select id="enquiry-type" name="enquiry-type" required>
-                            <option value="">Select an option</option>
-                            <option value="hiring">Hiring Talent</option>
-                            <option value="job-seeker">Joining Talent Pool</option>
-                            <option value="partnership">Partnership Opportunities</option>
-                            <option value="general">General Enquiry</option>
-                        </select>
-                    </div>
-                    <div class="form-row">
+                <div class="contact-form-wrapper" data-aos="fade-left">
+                    <form class="contact-form">
                         <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" name="name" required>
+                            <input type="text" name="name" placeholder="Your Name" required>
                         </div>
                         <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="company">Company</label>
-                            <input type="text" id="company" name="company">
+                            <input type="email" name="email" placeholder="Your Email" required>
                         </div>
                         <div class="form-group">
-                            <label for="phone">Phone</label>
-                            <input type="tel" id="phone" name="phone">
+                            <input type="tel" name="phone" placeholder="Phone Number">
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn-primary">Send Message</button>
-                </form>
+                        <div class="form-group">
+                            <select name="subject" required>
+                                <option value="">Select Inquiry Type</option>
+                                <option value="hire">I want to hire talent</option>
+                                <option value="job">I'm looking for a job</option>
+                                <option value="consulting">I need consulting services</option>
+                                <option value="partnership">Partnership opportunity</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
@@ -442,9 +855,15 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <h3>IMIZIZI</h3>
-                    <p>Empowering businesses through exceptional people management solutions.</p>
-                    <p class="footer-tagline">"By investing in people we all rise."</p>
+                    <div class="footer-logo">
+                        <img src="images/Logo.png" alt="Imizizi Logo" class="logo-img">
+                    </div>
+                    <p>Building strong foundations for business success through people.</p>
+                    <div class="footer-social">
+                        <a href="#">LinkedIn</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">Facebook</a>
+                    </div>
                 </div>
                 <div class="footer-col">
                     <h4>Services</h4>
@@ -460,17 +879,16 @@
                     <ul>
                         <li><a href="#about">About Us</a></li>
                         <li><a href="#team">Our Team</a></li>
-                        <li><a href="#careers">Careers</a></li>
                         <li><a href="#insights">Insights</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Connect</h4>
+                    <h4>Careers</h4>
                     <ul>
-                        <li><a href="#contact">Contact Us</a></li>
-                        <li><a href="#">LinkedIn</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#talent-pool">Join Talent Pool</a></li>
+                        <li><a href="#open-roles">Open Roles</a></li>
+                        <li><a href="#career-advice">Career Advice</a></li>
                     </ul>
                 </div>
             </div>
